@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -name "*.gif" | sort -f -t '\0' | awk -F/ '{print $NF}' | sed 's/\.gif$//' > gif_files.txt
